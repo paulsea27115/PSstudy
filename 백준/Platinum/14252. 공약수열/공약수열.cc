@@ -1,0 +1,2 @@
+#import <bits/stdc++.h>
+using namespace std;int j,i,a,c,v[60];main(){cin>>a;for(i=0;i<a;i++)cin>>v[i];sort(v,v+a);for(i=0;i<a-1;i++){if(gcd(v[i],v[i+1])!=1){for(j=v[i]+1;j<v[i+1];j++){if(gcd(v[i],j)==1&&gcd(j,v[i+1])==1){c-=1;break;}}c+=2;}}cout<<c;}
