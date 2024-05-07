@@ -1,2 +1,4 @@
 # BOJ
-baekjoon solved problem
+백준 익스텐션으로 연동시킨 Repoitories입니다. 
+
+백준에서 푼 문제들이 티어별로 저장 됩니다.
