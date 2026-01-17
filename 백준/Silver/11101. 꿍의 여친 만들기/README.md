@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 109544 KB, 시간: 96 ms
+메모리: 32412 KB, 시간: 84 ms
 
 ### 분류
 
@@ -12,7 +12,7 @@
 
 ### 제출 일자
 
-2026년 1월 3일 17:40:13
+2026년 1월 17일 19:42:45
 
 ### 문제 설명
 
@@ -24,7 +24,7 @@
 
 <p>아래 그림을 보자.</p>
 
-<p><img src="" style="height:283px; width:443px"></p>
+<p><img src="https://www.acmicpc.net/userupload/seok9311/201512/5266bec88de87bdea400f03d83d2c71a.png" style="height:283px; width:443px"></p>
 
 <p>[그림: 꿍이 그녀를 정복하기 위해 해야할 것들]</p>
 

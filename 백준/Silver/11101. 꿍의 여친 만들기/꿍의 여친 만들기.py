@@ -1,14 +1,5 @@
-import sys
-def input():
-    return sys.stdin.readline().strip()
-n=int(input())
-for i in range(n):
-    d = {}
-    l = []
-    for x in list(map(str, input().split(","))):
-        a, b = x.split(":")
-        d[a] = int(b)
-    for x in list(map(str, input().split("|"))):
-        a = list(map(lambda y: d[y], x.split("&")))
-        l.append(max(a))
-    print(min(l))
+i=input
+for _ in [0]*int(i()):
+  a=i().replace(":","1=").replace(",",";");x=1e9
+  for j in i().split("|"):exec(f'{a};global x;x=min(x,max(0,int({j.replace("&","1),int(")}1)))')
+  print(x)
