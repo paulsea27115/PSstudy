@@ -1,15 +1,6 @@
 #include <iostream>
 int li[100][100] = {0,};
 
-void output() {
-    for(int i = 0 ; i < 100; i++) {
-        for(int j  =0 ; j < 100; j++) {
-            std::cout << li[i][j];
-        }
-        std::cout << std::endl;
-    }
-}
-
 int main()
 {
     int a, n, m;
@@ -33,10 +24,7 @@ int main()
         }
     }
     
-    // output();
-    
     std::cout << cnt;
     
     return 0;
 }
-
