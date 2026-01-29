@@ -1,10 +1,6 @@
-#include <bits/stdc++.h>
+#include <iostream>
 
-int main()
-{
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(NULL);
-    
+int main(){
     int t = 3;
     
     for(int i = 0; i < t; i++) {
@@ -16,7 +12,6 @@ int main()
         
         for(int j = 0; j < s.length(); j++) {
             check = c == s[j] ? check + 1 : 1;
-            // std::cout << c << " " << s[j] << "\n";
             
             max = check > max ? check : max;
             
@@ -27,5 +22,4 @@ int main()
     }
     
     return 0;
-    
 }
