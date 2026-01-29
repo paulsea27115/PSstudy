@@ -14,24 +14,24 @@ int main() {
     std::deque<char> dq;
     
     std::cin >> s >> check_s;
-    std::reverse(check_s.begin(), check_s.end());
+    // std::reverse(check_s.begin(), check_s.end());
     
     for(int i = 0; i < s.length(); i++){
         dq.push_back(s[i]);
         
         if(check_s.length() <= dq.size()) {
-            std::deque<char> _dq;
+            bool c = true;
+            
             for(int j = 0; j < check_s.length(); j++) {
-                _dq.push_back(dq.back());
-                dq.pop_back();
+                if(check_s[j] != dq[dq.size() - (check_s.length() - j)]) {
+                    c = false;
+                    break;
+                }
             }
             
-            if(std::string(_dq.begin(), _dq.end()) == check_s) {
-                continue;
-            } else {
+            if(c) {
                 for(int j = 0; j < check_s.length(); j++) {
-                    dq.push_back(_dq.back());
-                    _dq.pop_back();
+                    dq.pop_back();
                 }
             }
         }
