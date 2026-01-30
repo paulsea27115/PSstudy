@@ -1,13 +1,7 @@
-n = input()
-use = input()
-
-len_use = len(use)
-stack = []
-
-for i in range(len(n)):
-    stack.append(n[i])
-    if "".join(stack[-len_use:]) == use:
-        for _ in range(len_use):
-            stack.pop()
-
-print("".join(stack))
+i=input
+S,T=i(),i()
+r,l="",len(T)
+for c in S:
+    r+=c
+    if r[-l:]==T:r=r[:-l]
+print(r)
