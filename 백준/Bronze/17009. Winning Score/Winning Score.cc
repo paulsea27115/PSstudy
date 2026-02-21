@@ -13,7 +13,7 @@ int main()
         check -= half - 1 == i ? -2: 1;
     }
     
-    cout << (res == 0 ? "T" : (res < 0 ? "B" : "A"));
+    cout << (res == 0 ? "T" : res < 0 ? "B" : "A");
 
     return 0;
 }
