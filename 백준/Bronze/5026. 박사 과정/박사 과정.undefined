@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+#include <string_view>
+#include <ranges>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+    int t;
+    cin >> t;
+    
+    for(int i = 0; i < t; i++) {
+        string s;
+        cin >> s;
+        
+        if(s.find("+") != string::npos) {
+            auto split_view = s | views::split('+');
+            int res = 0;
+            
+            for (const auto& word : split_view) res += stoi((string)string_view(word));
+            
+            cout << res << "\n";
+        } else {
+            cout << "skipped" << "\n";
+        }
+    }
+
+    return 0;
+}
