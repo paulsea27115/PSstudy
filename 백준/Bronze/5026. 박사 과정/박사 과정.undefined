@@ -2,7 +2,6 @@
 #include <string>
 #include <string_view>
 #include <ranges>
-#include <vector>
 
 using namespace std;
 
@@ -22,9 +21,7 @@ int main()
             for (const auto& word : split_view) res += stoi((string)string_view(word));
             
             cout << res << "\n";
-        } else {
-            cout << "skipped" << "\n";
-        }
+        } else cout << "skipped" << "\n";
     }
 
     return 0;
