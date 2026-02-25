@@ -1,0 +1,54 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+class RGB{
+private:
+    int r;
+    int g;
+    int b;
+    
+public:
+    void initRGB(int r, int g, int b){
+        this -> r = r;
+        this -> g = g;
+        this -> b = b;
+    }
+
+    char translate(){
+        int res = 2126 * r + 7152 * g + 722 * b;
+        
+        if(2040000 <= res) return '.';
+        else if(1530000 <= res) return '-';
+        else if(1020000 <= res) return '+';
+        else if(510000 <= res) return 'o';
+        else return '#';
+    }
+};
+
+int main()
+{
+    RGB rgbs[400][400];
+    
+    int a, n;
+    cin >> a >> n;
+    
+    for(int i = 0; i < a; i++) {
+        for(int j = 0; j < n; j++) {
+            int r, g, b;
+            cin >> r >> g >> b;
+            
+            rgbs[i][j].initRGB(r, g, b);
+        }
+    }
+    
+    for(int i = 0; i < a; i++) {
+        for(int j = 0; j < n; j++) {
+            cout << rgbs[i][j].translate();
+        }
+        cout << "\n";
+    }
+
+    return 0;
+}
