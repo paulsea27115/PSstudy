@@ -1,0 +1,1 @@
+main(n,i,x,y,t){scanf("%d",&n);if(n>=3){printf("YES\n%d\n",n);for(i=0;i<n;i++)scanf("%d",&t),printf("%d ",t);}else{scanf("%d %d",&x,&y);x*=y;for(i=2;i<x;i++){if(x%i==0){x/=y;printf("YES\n2\n%d %d",x,y);return 0;}}puts("NO");}}
