@@ -35,7 +35,7 @@ int main()
     cin >> a_to >> b_from;
     
     for(ll i = a_to; i <= b_from; i++) {
-        if(i >= 10000000) continue;
+        if(i >= N) continue;
         else if(v[i] && isP(i)) cout << i << "\n";
     }
     cout << -1;
