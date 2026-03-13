@@ -1,0 +1,1 @@
+print("E" if eval((input().replace(" ",">=") + " ").replace(" ","/2")) else "H")
